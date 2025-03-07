@@ -9,8 +9,8 @@ const Card = ({ data }) => {
   const selectedItem = data.find((i) => i.title === id);
 
   // Directly use path from `public/images/`
-  const getImagePath = (imageName) => {
-    return `/SCP_react_app/images/${imageName}`;  // Direct path from `public/images/`
+  const getImagePath = (selectedItem) => {
+    return `/SCP_react_app/images/${selectedItem}`;  // Direct path from `public/images/`
   };
 
   if (!selectedItem) return <div>Item not found</div>;
