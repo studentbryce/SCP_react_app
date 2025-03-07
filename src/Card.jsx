@@ -9,7 +9,7 @@ const Card = ({ data }) => {
   const selectedItem = data.find((i) => i.title === id);
 
   const getImagePath = (imageName) => {
-    return `/SCP_react_app/images/${imageName}`;  // Direct path from `public/images/`
+    return `/SCP_react_app/assets/${imageName}`;  // Direct path from `public/images/`
   };
   
   if (!selectedItem) return <div>Item not found</div>;
@@ -27,7 +27,7 @@ const Card = ({ data }) => {
           className="scp-image"
         />
       )}
-      
+
       {/* Special Containment Procedures */}
       <h3>Special Containment Procedures:</h3>
       <p>{selectedItem.special_containment_procedures}</p>
