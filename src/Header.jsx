@@ -1,6 +1,6 @@
 import React from "react";
-import headerImage from "./assets/SCP_Header.png"; // Import image
-import headerTitle from "./assets/SCP_Archives.jpg"; // Import image
+import headerImage from "/assets/SCP_Header.png"; // Import image
+import headerTitle from "/assets/SCP_Archives.jpg"; // Import image
 import "./App.css";
 
 const Header = () => {
