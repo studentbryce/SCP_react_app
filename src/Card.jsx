@@ -10,7 +10,7 @@ const Card = ({ data }) => {
 
   // Directly use path from `public/images/`
   const getImagePath = (imageName) => {
-    return `/SCP_json_react_app/images/${imageName}`;  // Direct path from `public/images/`
+    return `/SCP_react_app/images/${imageName}`;  // Direct path from `public/images/`
   };
 
   if (!selectedItem) return <div>Item not found</div>;
