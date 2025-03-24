@@ -8,13 +8,13 @@ const Navbar = ({ data }) => {
       <ul>
         {/* Add Home link */}
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="navbar-button">Home</Link>
         </li>
 
         {/* Dynamically render other links from data */}
         {data.map((item, index) => (
           <li key={index}>
-            <Link to={`/scp/${item.title}`}>{item.title}</Link>
+            <Link to={`/scp/${item.title}`} className="navbar-button">{item.title}</Link>
           </li>
         ))}
       </ul>
